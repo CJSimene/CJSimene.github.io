@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="//db.onlinewebfonts.com/c/d462e85523e33639f5979deaf9f97509?family=Reklame+Script+DEMO" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c699cf1b72.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    #header-content {
+        font-family: 'Lobster', serif;
+        font-size: 64px;
+    }
+
+    li{
+        font-size: 14.5px;
+    }
+
+    #cover-image {
+        background-image: url('image/bldg1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    button{
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        color: white;
+        background-color:rgb(57, 57, 57);
+        /* font-family:'Roboto', serif; */
+        font-size: 20px;
+    }
+
+    #teampic {
+        background-color: #F9F7FA;
+    }
+
+
+    #headline {
+        font-family:'Roboto', serif;
+        font-size: 24px;
+        color:#393939;
+        margin-bottom: 0; 
+        display: inline-block;
+    }
+
+    #subhead {
+        color: rgb(157, 157, 157);
+        font-family:'Roboto', serif;
+        font-size: 18px;
+    }
+
+    #subhead2 {
+        color: #666666;
+        font-family:'Roboto', serif;
+        font-size: 16px;
+    }
+
+    #icon-block {
+        display: inline-block; 
+    }
+
+
+    #credit-block {
+        color: #666666;
+        font-family:'Roboto', serif;
+        font-size: 14px;
+    }
+
+    #footer-section {
+        background-color: #4C4C4C;
+        color: #ffffff;
+        font-family:'Roboto', serif;
+        font-size: 15px;
+    }
+
+</style>
+
+<body>
+
+    <div id="cover-image">
+        <header class="md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4">
+
+            <div class="flex items-center justify-between mb-4 md:mb-0 ml-4 mt-2">
+
+                <img class="h-20 w-20" src="image\microsoft-centered-logo.png" >
+        
+            </div>
+
+            <nav class="hidden md:block">
+                <ul class="list-reset md:flex md:items-center p-8">
+                    <li class="md:ml-4">
+                    <a class="font-semibold block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/index.html">
+                        HOME
+                    </a>
+                    </li>
+                    <li class="md:ml-4">
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/about-us.html">
+                        ABOUT US
+                    </a>
+                    </li>
+                    <li class="md:ml-4">
+                        <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/our-team.html">
+                        OUR TEAM
+                        </a>
+                    </li>
+                    <li class="md:ml-4">
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/contact.html">
+                        CONTACT
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="-mr-2 flex md:hidden">
+                <!-- Mobile menu button -->
+                <button class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white float-right">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                    Heroicon name: menu
+    
+                    Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                    Heroicon name: x
+    
+                    Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </button>
+                
+            </div>
+
+            <div class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a class="font-semibold block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        HOME
+                    </a>
+          
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        ABOUT US
+                    </a>
+          
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        OUR TEAM
+                    </a>
+          
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        CONTACT
+                    </a>
+          
+            </div>
+
+        
+        </header>
+
+        <div class="text-center">
+            <h1 class="mt-40 text-white" id="header-content">Cancellation Department</h1>
+            <h2 class="py-4 text-white font-semibold xl:text-xl">WE ARE DEDICATED TO HELPING YOU</h2>
+            <br />
+            <br />
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="py-24">
+            <h1 id="form-header" class="">Select your operating system</h1>
+        </div>
+    </div>
+
+    <div>
+        <div class="px-36 py-4">
+            <button class="py-6 px-28 font-semibold">MAC</button>
+        </div>
+        <br />
+        <div class="px-36 py-4">
+            <button class="py-6 px-24 font-semibold">My - PC</button>
+        </div>
+        <br />
+        <div class="px-36 py-4">
+            <button class="py-6 px-24 font-semibold">Window</button>
+        </div>
+        <br />
+        <div class="px-36 py-4">
+            <button class="py-6 px-28 font-semibold">Ultra</button>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="justify-center content-center flex">
+        <div>
+            <section>
+                <img src="image/persona.png" style="height: 400px; width: 250px; float: left;">
+                <header id="icon-block" class="mt-32 px-12">
+                    <h1 id="headline" class="px-4">Martin Davis</h1>
+                    <h2 id="subhead" class="px-4">CEO</h2>
+                    <p id="subhead2" class="px-4 mt-2">
+                        Martin is the founding member of the company. Porro quisquam <br />
+                        est qui dolorem ipsum quia dolor sit amet consectetur adipisci <br />
+                        velit sed quia non numquam eius modi tempora incidunt ut labore et <br /> 
+                        dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam <br />
+                        quis nostrum exercitationem ullam corporis suscipit laboriosam nisi <br />
+                        ut aliquid ex.
+                    </p>
+                </header>
+            </section>
+            
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="justify-center content-center flex" id="teampic">
+        <div>
+            <section>
+                <img src="image/persona.png" style="height: 400px; width: 250px; float: right;">
+                <header id="icon-block" class="mt-32 px-12" id="header2">
+                    <h1 id="headline" class="px-4">Mary Mitchell</h1>
+                    <h2 id="subhead" class="px-4">Attorney</h2>
+                    <p id="subhead2" class="px-4 mt-2">
+                        Mary started working in the company 5 years ago. Porro quisquam <br />
+                        est qui dolorem ipsum quia dolor sit amet consectetur adipisci <br />
+                        velit sed quia non numquam eius modi tempora incidunt ut labore et <br /> 
+                        dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam <br />
+                        quis nostrum exercitationem ullam corporis suscipit laboriosam nisi <br />
+                        ut aliquid ex.
+                    </p>
+                </header>
+            </section>
+        </div>
+    </div>
+
+    <div class="justify-center content-center flex">
+        <div>
+            <section>
+                <img src="image/persona.png" style="height: 400px; width: 250px; float: left;">
+                <header id="icon-block" class="mt-32 px-12">
+                    <h1 id="headline" class="px-4">Peter Miller</h1>
+                    <h2 id="subhead" class="px-4">Manager</h2>
+                    <p id="subhead2" class="px-4 mt-2">
+                        Peter is responsible for the important decisions. Porro quisquam <br />
+                        est qui dolorem ipsum quia dolor sit amet consectetur adipisci <br />
+                        velit sed quia non numquam eius modi tempora incidunt ut labore et <br /> 
+                        dolore magnam aliquam quaerat voluptatem ut enim ad minima veniam <br />
+                        quis nostrum exercitationem ullam corporis suscipit laboriosam nisi <br />
+                        ut aliquid ex.
+                    </p>
+                </header>
+            </section>
+            
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="text-center" id="teampic">
+        <h1 id="credit-block" class="py-2">Davis & Miller, 12 Pike St, New York, NY 10002</h1>
+        <h2 id="credit-block" class="py-1 mb-4">Powered by <u><a href="https://us.webnode.com/?utm_source=text&utm_medium=footer&utm_campaign=free2&utm_content=wnd2">Webnode</a></u></h2>
+    </div>
+
+    <footer id="footer-section" class="p-5">
+        <div>
+            <div>
+                <a href="#" class="py-5 ml-4">
+                    Create a free website
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

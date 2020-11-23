@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="//db.onlinewebfonts.com/c/d462e85523e33639f5979deaf9f97509?family=Reklame+Script+DEMO" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c699cf1b72.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    #header-content {
+        font-family: 'Lobster', serif;
+        font-size: 64px;
+    }
+
+    li{
+        font-size: 14.5px;
+    }
+
+    #cover-image {
+        background-image: url('image/bldg1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #form-header {
+        font-family:'Reklame Script DEMO', serif;
+        font-size: 55px;
+    }
+
+    #form-label{
+        font-family:'Roboto', serif;
+        font-size: 16px;
+    }
+
+    input[type="text"]{
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        width: 30%;
+        padding: 10px 20px;
+    }
+
+    .mainbutton{
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        padding: 10px 22px;
+        color: white;
+        background-color:rgb(157,157,157);
+        font-family:'Roboto', serif;
+    }
+
+
+    #headline {
+        font-family:'Roboto', serif;
+        font-size: 24px;
+        color:#393939;
+        margin-bottom: 0; 
+        display: inline-block;
+    }
+
+    #subhead {
+        color: rgb(157, 157, 157);
+        font-family:'Roboto', serif;
+        font-size: 18px;
+    }
+
+    #teampic {
+        background-color: #F9F7FA;
+    }
+
+    #subhead2 {
+        color: #666666;
+        font-family:'Roboto', serif;
+        font-size: 16px;
+    }
+
+    #icon-block {
+        display: inline-block; 
+    }
+
+    #credit-block {
+        color: #666666;
+        font-family:'Roboto', serif;
+        font-size: 14px;
+    }
+
+    #footer-section {
+        background-color: #4C4C4C;
+        color: #ffffff;
+        font-family:'Roboto', serif;
+        font-size: 15px;
+    }
+
+</style>
+
+<body>
+
+    <div id="cover-image">
+        <header class="md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4">
+
+            <div class="flex items-center justify-between mb-4 md:mb-0 ml-4 mt-2">
+
+                <img class="h-20 w-20" src="image\microsoft-centered-logo.png" >
+        
+            </div>
+
+            <nav class="hidden md:block">
+            <ul class="list-reset md:flex md:items-center p-8">
+                <li class="md:ml-4">
+                <a class="font-semibold block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/index.html">
+                    HOME
+                </a>
+                </li>
+                <li class="md:ml-4">
+                <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/about-us.html">
+                    ABOUT US
+                </a>
+                </li>
+                <li class="md:ml-4">
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/our-team.html">
+                    OUR TEAM
+                    </a>
+                </li>
+                <li class="md:ml-4">
+                <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="/contact.html">
+                    CONTACT
+                </a>
+                </li>
+            </ul>
+            </nav>
+
+            <div class="-mr-2 flex md:hidden">
+                <!-- Mobile menu button -->
+                <button class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white float-right">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                    Heroicon name: menu
+    
+                    Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                    Heroicon name: x
+    
+                    Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </button>
+                
+            </div>
+
+            <div class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a class="font-semibold block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        HOME
+                    </a>
+          
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        ABOUT US
+                    </a>
+          
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        OUR TEAM
+                    </a>
+          
+                    <a class="font-semibold border-t block no-underline py-2 text-gray-200 hover:text-white md:border-none md:p-0" href="#">
+                        CONTACT
+                    </a>
+          
+            </div>
+
+        
+        </header>
+
+        <div class="text-center">
+            <h1 class="mt-40 text-white" id="header-content">Cancellation Department</h1>
+            <h2 class="py-4 text-white font-semibold xl:text-xl">Help24x7</h2>
+            <br />
+            <br />
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="py-24">
+            <h1 id="form-header" class="">Enter Your Order ID</h1>
+        </div>
+
+        <div class="">
+            <form method="post" action="/our-team.html">
+                <div class="py-2">
+                    <label id="form-label" class="font-semibold text-gray-600 ml-10 px-4">Order ID/NO</label>
+                    <input 
+                        type="text"
+                        id="order_no"
+                        name="oder_no"
+                    />
+                </div>
+                <div class="py-2">
+                    <label id="form-label" class="font-semibold text-gray-600 px-4">First & Last Name</label>
+                    <input 
+                        type="text"
+                        id="fnamelname"
+                        name="fnamelname"
+                    />
+                </div>
+                <div class="py-2">
+                    <label id="form-label" class="font-semibold text-gray-600 ml-6 px-4">Phone number</label>
+                    <input 
+                        type="text"
+                        id="phone"
+                        name="phone"
+                    />
+                </div>
+                <div class="py-2">
+                    <button
+                        class="mr-36 mainbutton"
+                        type="submit" 
+                        value="Submit"
+                        id="myButton"
+                        onclick="location.href = 'our-team.html'; "
+                    >
+                     Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="justify-center content-center flex py-32">
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <div>
+                    <section>
+                        <i class="fa fa-handshake fa-5x"></i>
+                        <header id="icon-block">
+                            <h1 id="headline" class="px-4">Business Law</h1>
+                            <h2 id="subhead" class="px-4">Business cases solved efficiently</h2>
+                            <h2 id="subhead2" class="px-4 mt-2">This is where your text starts. You can click here</h2>
+                        </header>
+                        <p id="subhead2">to start typing. Porro quisquam est qui dolorem ipsum quia <br /> dolor sit amet consectetur adipisci.</p>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <section>
+                        <i class="fa fa-user-friends fa-5x"></i>
+                        <header id="icon-block">
+                            <h1 id="headline" class="px-4">Employment Law</h1>
+                            <h2 id="subhead" class="px-4">Your employment rights protected</h2>
+                            <h2 id="subhead2" class="px-4 mt-2">This is where your text starts. You can click here</h2>
+                        </header>
+                        <p id="subhead2">to start typing. Porro quisquam est qui dolorem ipsum quia <br /> dolor sit amet consectetur adipisci.</p>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <section>
+                        <i class="fa fa-home fa-5x"></i>
+                        <header id="icon-block">
+                            <h1 id="headline" class="px-4">Family Law</h1>
+                            <h2 id="subhead" class="px-4">Relationships kept in order</h2>
+                            <h2 id="subhead2" class="px-4 mt-2">This is where your text starts. You can click here</h2>
+                        </header>
+                        <p id="subhead2">to start typing. Porro quisquam est qui dolorem ipsum quia <br /> dolor sit amet consectetur adipisci.</p>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <section>
+                        <i class="fa fa-crosshairs fa-5x"></i>
+                        <header id="icon-block">
+                            <h1 id="headline" class="px-4">Criminal Law</h1>
+                            <h2 id="subhead" class="px-4">Keeping the public safe</h2>
+                            <h2 id="subhead2" class="px-4 mt-2">This is where your text starts. You can click here</h2>
+                        </header>
+                        <p id="subhead2">to start typing. Porro quisquam est qui dolorem ipsum quia <br /> dolor sit amet consectetur adipisci.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center" id="teampic">
+        <h1 id="credit-block" class="py-2">Davis & Miller, 12 Pike St, New York, NY 10002</h1>
+        <h2 id="credit-block" class="py-1 mb-4">Powered by <u><a href="https://us.webnode.com/?utm_source=text&utm_medium=footer&utm_campaign=free2&utm_content=wnd2">Webnode</a></u></h2>
+    </div>
+
+    <footer id="footer-section" class="p-5">
+        <div>
+            <div>
+                <a href="#" class="py-5 ml-4">
+                    Create a free website
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "about-us.html";
+        };
+    </script>
+    
+</body>
+</html>
